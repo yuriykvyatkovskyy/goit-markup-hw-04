@@ -103,22 +103,26 @@ body {
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.32px;
-    position: relative;
     padding-top: 24px;
     padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* color: #404bbf; */
 }
 
-.menu-link::after {
+.hover-studio{
+    position: relative;
+    color: #404bbf;
+}
+
+.hover-studio::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
+    width: 48px;
     background-color: #404bbf;
     border-radius: 2px;
-
 }
 
 .menu-link:hover,
@@ -328,6 +332,7 @@ body {
 
 .directions-item {
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .directions-item-img-wrapper {
@@ -360,6 +365,7 @@ body {
 .directions-item:hover .directions-overlay,
 .directions-item:focus .directions-overlay {
     transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .directions-img {
