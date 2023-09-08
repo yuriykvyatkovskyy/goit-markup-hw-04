@@ -236,6 +236,16 @@ body {
     width: calc(100% - 3 * 24px / 4);
 }
 
+.container-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .benefits-menu-list {
     color: #2E2F42;
     font-size: 20px;
